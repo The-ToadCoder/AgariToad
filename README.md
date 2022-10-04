@@ -1,4 +1,4 @@
-# AgariToad
+# AgariToad (Version 1.5.2)
 Basically this is a poor ripoff of Agar.io, but without multiplayer. <br /> 
 Avoid the larger toads, and eat smaller ones to grow larger. <br />
 The game's dev-log is located in the `lib/DevLog.txt`.<br />
