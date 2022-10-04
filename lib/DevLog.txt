@@ -9,7 +9,7 @@ Version 1.5.2:    (Not a worthy update for 1.6 so its 1.5.2)
 -Cleaned up files (moved dev-log)
 -Made a README.md File
 -Added Weblinks 
--added sound.py, font.py, img.py
+-added sound.py, font.py, img.py, devTodoList.md
 =================================================================
 
 Version 1.5.1:    (Not a worthy update for 1.6 so its 1.5.1)
