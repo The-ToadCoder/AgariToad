@@ -1,0 +1,77 @@
+
+Version 1.6: (Working on it)
+=================================================================
+-
+=================================================================
+
+Version 1.5.2:    (Not a worthy update for 1.6 so its 1.5.2)
+=================================================================
+-Cleaned up files (moved dev-log)
+-Made a README.md File
+-Added Weblinks 
+-added sound.py, font.py, img.py
+=================================================================
+
+Version 1.5.1:    (Not a worthy update for 1.6 so its 1.5.1)
+=================================================================
+-Cleaned up files
+-added a config file for people wanting to change the game
+settings
+=================================================================
+
+Version 1.5:
+=================================================================
+-Add new keybind
+-Fixed win sound effect glitch
+-added msg box surrounding the win and lose game msgs 
+-Fixed the score counter text glitch after the player wins
+-added the dev-log to assets folder
+-created a secret msg from creator
+=================================================================
+
+
+Version 1.4:
+=================================================================
+-added player score system
+-lots of bug fixing and tweaking the score system
+-fixed win mode displaying score(amount of toads eaten) bug
+-added 2nd text layer to all displaying text for effects
+-Win sound effect bug still not solved 
+=================================================================
+
+
+Version 1.3:
+=================================================================
+-tweaking newly added soundEffect 
+-added player eating/squashing npc sound effects
+-patching any bugs or errors
+=================================================================
+
+
+Version 1.2:
+=================================================================
+-added background game music
+-added sound effects (death, win, player-collision)
+-patching any bugs or errors, tweaking effects
+-Know-bug Win soundEffect repeats alot after winning
+=================================================================
+
+
+Version 1.1:
+=================================================================
+-added barry-bush with-in the grassObj
+-added barry-bush graphics
+=================================================================
+
+
+Version 1:(Basic game was working and playable)
+=================================================================
+-added player movement & npc movement
+-added player health bar & npc collision detection 
+-added player loseing screen
+-added player wining screen
+-added background objects (Grass)
+-added non-player characters
+-added grass graphics
+-added player and npc graphics
+=================================================================
