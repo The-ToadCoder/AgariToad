@@ -1,5 +1,8 @@
 import random, sys, time, math, pygame
 from pygame.locals import *
+from assets.fonts.font import *
+from assets.imgs.img import *
+from assets.sounds.sound import *
 from lib.scr.msg.devMsg import *
 from lib.scr.webLinks import *
 from lib.config.config import *
@@ -18,9 +21,6 @@ GAMEOVERTIME = 4
 INVULNTIME = 2
 LEFT = 'left'
 RIGHT = 'right'
-fontPath = 'assets/fonts/'
-imgPath = 'assets/imgs/'
-soundPath = 'assets/sounds/'
 print(MSG)
 
 
@@ -28,24 +28,24 @@ def main():
     global FPSCLOCK, DISPLAYSURF, BASICFONT, SCOREFONT, L_TOAD_IMG, R_TOAD_IMG, GRASSIMAGES, winSound, loseSound, hurtSound, collectSound
 
     pygame.init()
-    winSound = pygame.mixer.Sound(soundPath + "Win.wav")
-    loseSound = pygame.mixer.Sound(soundPath + "Lose.wav")
-    hurtSound = pygame.mixer.Sound(soundPath + "hurt.wav")
-    collectSound = pygame.mixer.Sound(soundPath + "crunch.wav")
-    pygame.mixer.music.load(soundPath + 'backgroundMusic.wav')
+    winSound = pygame.mixer.Sound(soundPath + winSoundFile)
+    loseSound = pygame.mixer.Sound(soundPath + loseSoundFile)
+    hurtSound = pygame.mixer.Sound(soundPath + hurtSoundFile)
+    collectSound = pygame.mixer.Sound(soundPath + crunchSoundFile)
+    pygame.mixer.music.load(soundPath + backgroundSoundFile)
     pygame.mixer.music.play(-1)
     FPSCLOCK = pygame.time.Clock()
-    pygame.display.set_icon(pygame.image.load(imgPath + 'gameicon.png'))
+    pygame.display.set_icon(pygame.image.load(imagePath + faviconImageFile))
     DISPLAYSURF = pygame.display.set_mode((WINWIDTH, WINHEIGHT))
     pygame.display.set_caption('AgariToad')
-    BASICFONT = pygame.font.Font(fontPath + 'upheavtt.ttf', 50)
-    SCOREFONT = pygame.font.Font(fontPath + '3Dventure.ttf', 24)
+    BASICFONT = pygame.font.Font(fontPath + mainFontFile, 50)
+    SCOREFONT = pygame.font.Font(fontPath + scoreFontFile, 24)
 
-    L_TOAD_IMG = pygame.image.load(imgPath + 'toad.png')
+    L_TOAD_IMG = pygame.image.load(imagePath + toadImageFile)
     R_TOAD_IMG = pygame.transform.flip(L_TOAD_IMG, True, False)
     GRASSIMAGES = []
     for i in range(1, 6):
-        GRASSIMAGES.append(pygame.image.load(imgPath + 'grass%s.png' % i))
+        GRASSIMAGES.append(pygame.image.load(imagePath + grassImageFiles % i))
 
     while True:
         runGame()
